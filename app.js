@@ -27,25 +27,25 @@ for (let i = 0; i < 15; i++) {
         <menuitem class="menu__item">
           <img
             src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/duplicate.svg"
-            class="menu__item__icon" />
+            class="menu__item__icon"/>
           <span>Duplicate</span>
         </menuitem>
         <menuitem class="menu__item">
           <img
             src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/edit.svg"
-            class="menu__item__icon" />
+            class="menu__item__icon"/>
           <span>Edit</span>
         </menuitem>
         <menuitem class="menu__item">
           <img
             src="https://raw.githubusercontent.com/ALPHACamp/WFE-data-table/0f97f3113bff18353154b8644eb0b31fff2a3bef/icons/delete.svg"
-            class="menu__item__icon" />
+            class="menu__item__icon"/>
           <span>Delete</span>
         </menuitem>
       </menu>
     </div>
   </td>
-</tr >
+</tr>
 `
   tbody.innerHTML += repeatTr
 }
@@ -77,14 +77,14 @@ darkModeToggle.addEventListener('change', (e) => {
 })
 
 // 製作雙數列有不同底色效果
-const colorRows = document.querySelectorAll('tbody > .table__row')
+// const colorRows = document.querySelectorAll('tbody > .table__row')
 
-colorRows.forEach(e => {
-  id = Number(e.dataset.index)
-  if (id % 2 === 0) {
-    e.classList.add('color__row')
-  }
-})
+// colorRows.forEach(e => {
+//   id = Number(e.dataset.index)
+//   if (id % 2 === 0) {
+//     e.classList.add('color__row')
+//   }
+// })
 
 // 製作checkbox被點擊後，整列改變底色
 const checkedBox = document.querySelectorAll('.checked')

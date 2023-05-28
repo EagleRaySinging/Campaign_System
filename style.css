@@ -271,7 +271,7 @@ body {
 }
 
 .table_sticky_wrapper {
-  position: sticky;
+  /* position: sticky; */
   width: 90vw;
   height: 65vh;
   overflow: auto;
@@ -298,9 +298,17 @@ tr {
   align-items: center;
 }
 
-.color__row {
+/* .color__row {
+  background-color: rgba(230, 221, 221, 0.9);
+} */
+
+.table__body .table__row:nth-child(even) {
   background-color: rgba(230, 221, 221, 0.9);
 }
+
+/* .table__row:nth-child(even) {
+  background-color: rgba(230, 221, 221, 0.9);
+} */
 
 .selected_mode {
   background-color: orange
